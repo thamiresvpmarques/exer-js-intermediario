@@ -1,0 +1,76 @@
+body{
+    background-color:#E5E5E5;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container{
+    width: 655px;
+    height: 347px;
+    background-color: #fcfcfc;
+    border-radius: 30px;
+    box-shadow: 0 27px 49px -25px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.img-container{
+    position: absolute;
+    left: -90px;
+}
+.card {
+    color: black;
+    width: 90%;
+    padding-left: 225px;
+   
+}
+h1{
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 14px;
+}
+
+.conteudo{
+    list-style-type: none;
+}
+.conteudo .texto{
+    cursor: pointer;
+    background-image: url(../imagens/icone-seta-fechada.png);
+    background-repeat: no-repeat;
+    background-position: top 6px right 0;
+    background-size: 12px;
+    border-bottom: 1px solid #D4D4D4;
+    margin: 10px 0;
+}
+.card .conteudo .texto:last-child{
+    border-bottom: none;
+}
+.pergunta {
+    font-weight: 500;
+    font-size: 17px;
+    padding-bottom: 15px;
+    transition: 0.2s ease;
+    width: 90%;
+}
+.texto .pergunta:hover{
+    color: #f47c57;
+}
+.resposta{
+    display: none;
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+
+/*Ativo*/
+.card .conteudo .texto.ativo h2{
+    font-weight: 700;
+    font-size: 17px;
+}
+.card .conteudo .texto.ativo .resposta{
+    display: block;
+}
+.card .conteudo .texto.ativo {
+    background-image: url(../imagens/icone-seta-aberta.png);
+}
